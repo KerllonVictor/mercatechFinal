@@ -1,0 +1,67 @@
+ion-row {
+  justify-content: center;
+}
+
+ion-segment {
+  margin: 16px 0 8px 0;
+  width: 100%;
+  --background: var(--ion-background-color);
+}
+
+.produto-card {
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+  min-height: 370px;
+  background: var(--ion-card-background);
+}
+
+.produto-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  /* Remova o background daqui para o hover voltar ao normal */
+}
+
+.imagem-placeholder {
+  width: 90%;
+  height: 100px;
+  background:white;
+  object-fit: contain;
+  margin: 18px 0 10px 0;
+  border-radius: 8px;
+}
+
+ion-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: var(--ion-text-color);
+  margin-bottom: 10px;
+  text-align: center;
+  min-height: 40px;
+}
+
+.frete {
+  color: #007600;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.preco {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b12704;
+  margin-bottom: 10px;
+  text-align: center;
+}

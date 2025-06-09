@@ -1,0 +1,36 @@
+:root {
+  --ion-background-color: #f4f4f4;
+  --ion-text-color: #22223b;
+  --ion-color-primary: #3b82f6;
+  --ion-color-primary-contrast: #fff;
+  --ion-toolbar-background: #3b82f6;
+  --ion-toolbar-color: #fff;
+  --ion-item-background: #fff;
+  --ion-card-background: #fff;
+}
+
+body.dark {
+  --ion-background-color: #181a1b;
+  --ion-text-color: #f4f4f4;
+  --ion-color-primary: #3b82f6;
+  --ion-color-primary-contrast: #fff;
+  --ion-toolbar-background: #23272f;
+  --ion-toolbar-color: #f4f4f4;
+  --ion-item-background: #23272f;
+  --ion-card-background: #23272f;
+  --ion-item-background-hover: #2c313a;
+  --ion-tab-bar-color-selected: #fff;
+  --ion-tab-bar-background: #181a1b;
+  --ion-input-background: #23272f;
+  --ion-list-background: #23272f;
+}
+
+body.dark ion-button {
+  --color: #fff !important;
+}
+body.dark ion-input, 
+body.dark input, 
+body.dark textarea {
+  background: #23272f !important;
+  color: #f4f4f4 !important;
+}

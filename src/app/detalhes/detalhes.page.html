@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-segment [(ngModel)]="categoriaSelecionada" (ionChange)="filtrarPorCategoria()" scrollable>
+    <ion-segment-button *ngFor="let cat of categorias" [value]="cat">
+      {{ cat }}
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="3"
+        *ngFor="let produto of produtosFiltrados">
+        <ion-card class="produto-card" appDestaque>
+          <img [src]="produto.image" alt="Imagem do Produto" class="imagem-placeholder">
+          <ion-card-header>
+            <ion-card-title>{{ produto.title }}</ion-card-title>
+            <ion-card-subtitle>{{ produto.category }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="descricao">{{ produto.description }}</p>
+            <div class="frete" *ngIf="produto.isFeatured">Produto em Destaque</div>
+            <div class="preco">R$ {{ produto.price | number:'1.2-2' }}</div>
+            <ion-button expand="block" color="primary" (click)="adicionarCarrinho(produto)">
+              <ion-icon name="cart-outline" slot="start"></ion-icon>
+              Adicionar ao Carrinho
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

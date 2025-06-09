@@ -1,0 +1,150 @@
+/* src/app/home/home.page.scss */
+
+#container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#container h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+#container p {
+  font-size: 1.1rem;
+  color: var(--ion-color-medium);
+  margin-bottom: 32px;
+}
+
+ion-content {
+  --background: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+// Estilos para a seção de produtos (copiados de detalhes.page.scss e adaptados)
+.product-section {
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--ion-text-color);
+  }
+
+  ion-grid {
+    padding: 0 16px; // Adiciona padding para a grid
+  }
+
+  ion-row {
+    justify-content: center; // Centraliza as colunas na linha
+  }
+
+  ion-col {
+    padding: 8px; // Espaçamento entre as colunas
+  }
+
+  .produto-card {
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: box-shadow 0.2s;
+    min-height: 400px; /* Ajuste se necessário para ter altura consistente */
+    background: var(--ion-card-background);
+    color: var(--ion-text-color);
+  }
+
+  .produto-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  }
+
+  .imagem-placeholder {
+    width: 90%;
+    height: 120px; /* Ajuste para ter altura fixa para as imagens */
+    background: var(--ion-background-color-step-100); /* Cor mais clara para o placeholder */
+    object-fit: contain; /* Garante que a imagem se ajuste dentro do contêiner */
+    margin: 18px 0 10px 0;
+    border-radius: 8px;
+  }
+
+  ion-card-header {
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  ion-card-title {
+    font-size: 1.15rem; /* Aumenta um pouco o tamanho do título */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4px;
+    /* Para controlar o tamanho e quebra de linha de títulos longos */
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita o título a 2 linhas */
+    -webkit-box-orient: vertical;
+    min-height: 2.3em; /* Garante altura mínima para títulos de 1 ou 2 linhas */
+  }
+
+  ion-card-subtitle {
+    font-size: 0.95rem;
+    color: var(--ion-color-medium);
+    margin-top: 4px;
+  }
+
+  ion-card-content {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que o conteúdo expanda para preencher espaço */
+    justify-content: space-between; /* Empurra o botão para baixo */
+  }
+
+  .descricao {
+    font-size: 0.9rem;
+    color: var(--ion-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+    min-height: 40px; /* Garante altura para a descrição, mesmo vazia */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a descrição a 2 linhas */
+    -webkit-box-orient: vertical;
+  }
+
+  .frete { /* Usado para "Produto em Destaque" */
+    color: var(--ion-color-tertiary); /* Use uma cor do seu tema, por exemplo */
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .preco {
+    font-size: 1.25rem; /* Preço um pouco maior */
+    font-weight: bold;
+    color: var(--ion-color-success); /* Cor verde para preço */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  ion-button {
+    margin-top: auto; /* Empurra o botão para o final do card-content */
+    --padding-start: 10px;
+    --padding-end: 10px;
+  }
+
+  .no-products-message {
+    text-align: center;
+    color: var(--ion-color-medium);
+    margin-top: 30px;
+    font-size: 1.1rem;
+    padding-bottom: 40px; /* Adiciona padding para não ficar colado no fim da tela */
+  }
+}

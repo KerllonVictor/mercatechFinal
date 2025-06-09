@@ -1,0 +1,266 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "title": "Monitor Gamer 24''",
+      "category": "Monitores",
+      "description": "Monitor gamer Full HD com 144Hz de taxa de atualização.",
+      "price": 1299.99,
+      "image": "assets/produtos/monitor.jpg", 
+      "isFeatured": true
+    },
+    {
+      "id": 2,
+      "title": "Mouse Óptico RGB",
+      "category": "Mouses",
+      "description": "Mouse com iluminação RGB e 7200 DPI.",
+      "price": 149.90,
+      "image": "assets/produtos/mouseoptico.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 3,
+      "title": "Mousepad XXL",
+      "category": "Mousepads",
+      "description": "Mousepad tamanho XXL antiderrapante.",
+      "price": 59.90,
+      "image": "assets/produtos/mousepad.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 4,
+      "title": "Teclado Mecânico ABNT2",
+      "category": "Teclados",
+      "description": "Teclado mecânico com switches azuis e layout ABNT2.",
+      "price": 299.99,
+      "image": "assets/produtos/teclado.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 5,
+      "title": "Microfone Condensador USB",
+      "category": "Microfones",
+      "description": "Microfone condensador para streaming e gravações.",
+      "price": 249.99,
+      "image": "assets/produtos/miccondensador.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 6,
+      "title": "Fone de Ouvido Bluetooth",
+      "category": "Áudio",
+      "description": "Fone sem fio com cancelamento de ruído.",
+      "price": 199.99,
+      "image": "assets/produtos/fone_ouvido_bluetooth.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 7,
+      "title": "Kit Upgrade PC Gamer",
+      "category": "Kits",
+      "description": "Kit com placa-mãe, processador e memória RAM.",
+      "price": 1899.99,
+      "image": "assets/produtos/7 Kit Upgrade PC Gamer.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 8,
+      "title": "Webcam Full HD",
+      "category": "Webcams",
+      "description": "Webcam 1080p para videoconferências.",
+      "price": 129.90,
+      "image": "assets/produtos/8 Webcam Full HD.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 9,
+      "title": "SSD 480GB",
+      "category": "Armazenamento",
+      "description": "SSD SATA III de 480GB para alta performance.",
+      "price": 249.90,
+      "image": "assets/produtos/9 SSD 480GB.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 10,
+      "title": "Placa de Vídeo RTX 3060",
+      "category": "Placas de Vídeo",
+      "description": "Placa de vídeo NVIDIA RTX 3060 12GB.",
+      "price": 2499.99,
+      "image": "assets/produtos/10 Placa de Vídeo RTX 3060.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 11,
+      "title": "Gabinete Gamer RGB",
+      "category": "Gabinetes",
+      "description": "Gabinete com painel lateral em vidro temperado.",
+      "price": 399.90,
+      "image": "assets/produtos/11 Gabinete Gamer RGB.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 12,
+      "title": "Fonte 650W 80 Plus Bronze",
+      "category": "Fontes",
+      "description": "Fonte de alimentação 650W certificada.",
+      "price": 349.90,
+      "image": "assets/produtos/12 Fonte 650W 80 Plus Bronze.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 13,
+      "title": "Cooler para Processador",
+      "category": "Coolers",
+      "description": "Cooler com LED RGB para processadores Intel e AMD.",
+      "price": 89.90,
+      "image": "assets/produtos/13 Cooler para Processador.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 14,
+      "title": "Memória RAM 16GB DDR4",
+      "category": "Memórias",
+      "description": "Módulo de memória RAM DDR4 16GB 3200MHz.",
+      "price": 299.90,
+      "image": "assets/produtos/14 Memória RAM 16GB DDR4.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 15,
+      "title": "Hub USB 3.0 4 Portas",
+      "category": "Acessórios",
+      "description": "Hub USB para conectar múltiplos dispositivos.",
+      "price": 49.90,
+      "image": "assets/produtos/15 Hub USB 3.0 4 Portas.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 16,
+      "title": "Cadeira Gamer Reclinável",
+      "category": "Cadeiras",
+      "description": "Cadeira ergonômica com apoio para os pés.",
+      "price": 899.99,
+      "image": "assets/produtos/16 Cadeira Gamer Reclinável.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 17,
+      "title": "Kit Teclado e Mouse Sem Fio",
+      "category": "Kits",
+      "description": "Kit com teclado e mouse wireless.",
+      "price": 179.90,
+      "image": "assets/produtos/17 Kit Teclado e Mouse Sem Fio.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 18,
+      "title": "Switch HDMI 3x1",
+      "category": "Acessórios",
+      "description": "Switch para conectar até 3 dispositivos HDMI.",
+      "price": 69.90,
+      "image": "assets/produtos/18 Switch HDMI 3x1.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 19,
+      "title": "Estabilizador 500VA",
+      "category": "Energia",
+      "description": "Estabilizador de tensão para computadores.",
+      "price": 159.90,
+      "image": "assets/produtos/19 Estabilizador 500VA.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 20,
+      "title": "Headset Gamer USB",
+      "category": "Áudio",
+      "description": "Headset com microfone e iluminação LED.",
+      "price": 229.90,
+      "image": "assets/produtos/20 Headset Gamer USB.jpg",
+      "isFeatured": true
+    },
+    {
+      "id": 21,
+      "title": "Placa-mãe B450M",
+      "category": "Placas-mãe",
+      "description": "Placa-mãe para processadores AMD Ryzen.",
+      "price": 599.90,
+      "image": "assets/produtos/21 Placa-mãe B450M.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 22,
+      "title": "Cabo HDMI 2.0 2m",
+      "category": "Cabos",
+      "description": "Cabo HDMI de alta velocidade com 2 metros.",
+      "price": 29.90,
+      "image": "assets/produtos/22 Cabo HDMI 2.0 2m.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 23,
+      "title": "Adaptador Bluetooth USB",
+      "category": "Acessórios",
+      "description": "Adaptador USB para conexão Bluetooth.",
+      "price": 34.90,
+      "image": "assets/produtos/23 Adaptador Bluetooth USB.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 24,
+      "title": "Controle Xbox One PC",
+      "category": "Controles",
+      "description": "Controle original Xbox One compatível com PC.",
+      "price": 349.90,
+      "image": "assets/produtos/24 Controle Xbox One PC.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 25,
+      "title": "Pen Drive 64GB",
+      "category": "Armazenamento",
+      "description": "Pen Drive USB 3.0 de 64GB.",
+      "price": 49.90,
+      "image": "assets/produtos/25 Pen Drive 64GB.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 26,
+      "title": "Suporte para Notebook",
+      "category": "Acessórios",
+      "description": "Suporte ajustável para notebooks até 17 polegadas.",
+      "price": 79.90,
+      "image": "assets/produtos/26 Suporte para Notebook.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 27,
+      "title": "Kit Limpeza para PC",
+      "category": "Kits",
+      "description": "Kit com pincel, flanela e spray para limpeza de PC.",
+      "price": 39.90,
+      "image": "assets/produtos/27 Kit Limpeza para PC.jpg",
+      "isFeatured": false
+    },
+   
+    {
+      "id": 29,
+      "title": "Cabo de Rede Cat6 10m",
+      "category": "Cabos",
+      "description": "Cabo de rede Ethernet Cat6 com 10 metros.",
+      "price": 44.90,
+      "image": "assets/produtos/29 Cabo de Rede Cat6 10m.jpg",
+      "isFeatured": false
+    },
+    {
+      "id": 30,
+      "title": "Mouse Vertical Ergonômico",
+      "category": "Mouses",
+      "description": "Mouse vertical para maior conforto no uso prolongado.",
+      "price": 119.90,
+      "image": "assets/produtos/30 Mouse Vertical Ergonômico.jpg",
+      "isFeatured": false
+    }
+  ]
+}

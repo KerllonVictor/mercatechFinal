@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Meu Carrinho</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Meu Carrinho</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list *ngIf="itensCarrinho.length > 0; else vazio">
+    <ion-item *ngFor="let item of itensCarrinho">
+      <ion-thumbnail slot="start">
+        <img [src]="item.image" alt="Imagem do Produto">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ item.title }}</h2>
+        <p>R$ {{ item.price | number:'1.2-2' }}</p>
+      </ion-label>
+      <ion-button color="danger" fill="clear" slot="end" (click)="removerDoCarrinho(item)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ng-template #vazio>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Carrinho Vazio</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Parece que você ainda não adicionou nenhum produto ao seu carrinho.
+      <br><br>
+     <ion-button expand="block" routerLink="/tabs/detalhes">Ver Produtos</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ng-template>
+
+  <div *ngIf="itensCarrinho.length > 0" class="total-footer">
+    <h2>Total: R$ {{ total | number:'1.2-2' }}</h2>
+    <ion-button expand="block" color="primary" (click)="finalizarCompra()">
+      Finalizar Compra
+    </ion-button>
+  </div>
+
+</ion-content>
