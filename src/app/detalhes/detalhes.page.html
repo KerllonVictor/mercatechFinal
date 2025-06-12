@@ -19,7 +19,7 @@
           <img [src]="produto.image" alt="Imagem do Produto" class="imagem-placeholder">
           <ion-card-header>
             <ion-card-title>{{ produto.title }}</ion-card-title>
-            <ion-card-subtitle>{{ produto.category }}</ion-card-subtitle>
+            <ion-card-subtitle>{{ produto.category | titulo }}</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
             <p class="descricao">{{ produto.description }}</p>

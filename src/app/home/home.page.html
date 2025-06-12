@@ -12,23 +12,23 @@
 
   <div class="product-section ion-padding">
     <h2>Produtos em Destaque</h2>
-    
+
     <ion-grid>
       <ion-row>
         <ion-col size="12" size-sm="6" size-md="4" size-lg="3"
           *ngFor="let produto of produtosEmDestaque">
-          
+
           <ion-card class="produto-card">
             <img [src]="produto.image" alt="Imagem do Produto" class="imagem-placeholder">
             <ion-card-header>
-              <ion-card-title>{{ produto.title }}</ion-card-title>
+              <ion-card-title>{{ produto.title | maiuscula }}</ion-card-title>
               <ion-card-subtitle>{{ produto.category }}</ion-card-subtitle>
             </ion-card-header>
             <ion-card-content>
               <p class="descricao">{{ produto.description }}</p>
               <div class="frete" *ngIf="produto.isFeatured">Produto em Destaque</div>
               <div class="preco">R$ {{ produto.price | number:'1.2-2' }}</div>
-              
+
               <ion-button expand="block" color="primary" (click)="adicionarCarrinho(produto)">
                 <ion-icon name="cart-outline" slot="start"></ion-icon>
                 Adicionar ao Carrinho
@@ -42,6 +42,5 @@
     <p *ngIf="!produtosEmDestaque || produtosEmDestaque.length === 0" class="no-products-message">
       Nenhum produto em destaque encontrado.
     </p>
-
   </div>
 </ion-content>
